@@ -1,0 +1,6 @@
+Test Name            |  Objective                            |  Preconditions                    |  Method Inputs         |  Expected Results
+Test Initialization  |  Verify account initialization	     |  N/A                              |  (12345, 67890, 100.0) |  Account attributes set correctly
+Test Deposit         |  Verify valid deposit behavior        |  Account with balance of $100.00  |  deposit(50.0)         |  Balance updates to $150.00
+Test Invalid Deposit |  Ensure deposit handles invalid input |  Account with balance of $100.00  |  deposit(-50.0)        |  Raises ValueError: negative deposit
+Test Withdrawal      |  Verify valid withdrawal behavior     |  Account with balance of $100.00  |  withdraw(50.0)        |  Balance updates to $50.00
+ 
